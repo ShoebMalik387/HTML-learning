@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even or odd</title>
+</head>
+<body>
+
+    <input type="number" id="number" placeholder="Enter a Number">
+    <button onclick="show()">show</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function show () {
+
+            let x = document.getElementById("number").value;
+
+            if (x % 2 == 0) {
+
+                document.getElementById("result").innerHTML = "Even Number";
+            }
+
+            else {
+
+                document.getElementById("result").innerHTML = "Odd Number";
+            }
+            
+        }
+    </script>
+</body>
+</html>
