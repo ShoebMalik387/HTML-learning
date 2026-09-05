@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Factorial</title>
+</head>
+<body>
+    <h2> check factorial number</h2>
+
+
+    <input type="Number" id="num" placeholder="Enter a number">
+
+    <br><br>
+
+    <button onclick="findfactorial()">calculate</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function findfactorial () {
+            let num = Number (document.getElementById("num").value);
+            
+            let fact = 1;
+            for (let i = 1; i<=num; i++) {
+                fact *= i;
+            }
+                document.getElementById("result").innerHTML = "factorial = "+ fact;
+            }
+    </script>
+</body>
+</html>
